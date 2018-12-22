@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Intro", "01-Intro\01-Intro.csproj", "{FEECD352-0E7D-42C0-9070-5D476E27B821}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-AppConfig", "02-AppConfig\02-AppConfig.csproj", "{688FF0BF-4466-45D4-94BF-65DE92041B73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-CrudOperations", "03-CrudOperations\03-CrudOperations.csproj", "{01D7088A-CBF9-448D-995C-A85C4B945C83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-Relationships", "04-Relationships\04-Relationships.csproj", "{CD9AD4D1-4407-413C-99F8-EC4414D47C40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-ManyToMany", "05-ManyToMany\05-ManyToMany.csproj", "{45C83558-4BAD-437D-867C-C813BB147F48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-ManyToManyFluentAPI", "06-ManyToManyFluentAPI\06-ManyToManyFluentAPI.csproj", "{52939398-008E-4335-863E-2527DA4A3C11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-Attributes", "07-Attributes\07-Attributes.csproj", "{EE7F5849-D200-480E-A191-FD63843DFE4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEECD352-0E7D-42C0-9070-5D476E27B821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEECD352-0E7D-42C0-9070-5D476E27B821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEECD352-0E7D-42C0-9070-5D476E27B821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEECD352-0E7D-42C0-9070-5D476E27B821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{688FF0BF-4466-45D4-94BF-65DE92041B73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{688FF0BF-4466-45D4-94BF-65DE92041B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{688FF0BF-4466-45D4-94BF-65DE92041B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{688FF0BF-4466-45D4-94BF-65DE92041B73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01D7088A-CBF9-448D-995C-A85C4B945C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01D7088A-CBF9-448D-995C-A85C4B945C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01D7088A-CBF9-448D-995C-A85C4B945C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01D7088A-CBF9-448D-995C-A85C4B945C83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD9AD4D1-4407-413C-99F8-EC4414D47C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD9AD4D1-4407-413C-99F8-EC4414D47C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD9AD4D1-4407-413C-99F8-EC4414D47C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD9AD4D1-4407-413C-99F8-EC4414D47C40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C83558-4BAD-437D-867C-C813BB147F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C83558-4BAD-437D-867C-C813BB147F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C83558-4BAD-437D-867C-C813BB147F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C83558-4BAD-437D-867C-C813BB147F48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52939398-008E-4335-863E-2527DA4A3C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52939398-008E-4335-863E-2527DA4A3C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52939398-008E-4335-863E-2527DA4A3C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52939398-008E-4335-863E-2527DA4A3C11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE7F5849-D200-480E-A191-FD63843DFE4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE7F5849-D200-480E-A191-FD63843DFE4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE7F5849-D200-480E-A191-FD63843DFE4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE7F5849-D200-480E-A191-FD63843DFE4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C9BCA2F-E8DA-4377-9E53-23202A33D2C1}
+	EndGlobalSection
+EndGlobal
