@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>11-DifferentDeviceLayouts</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <h3>Phone - entire width; Desktop - 50% width</h3>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-6" style="background: lightblue">Phone - entire width; Desktop - 50% width</div>
+            <div class="col-xs-12 col-md-6" style="background: lightcoral">Phone - entire width; Desktop - 50% width</div>
+            <div class="col-xs-12 col-md-6" style="background: #87E68F">Phone - entire width; Desktop - 50% width</div>
+        </div>
+
+        <h3>Phone - 50% width; Desktop - 33% width</h3>
+        <div class="row">
+            <div class="col-xs-6 col-md-4" style="background: lightblue">Phone - 50% width; Desktop - 33% width</div>
+            <div class="col-xs-6 col-md-4" style="background: lightcoral">Phone - 50% width; Desktop - 33% width</div>
+            <div class="col-xs-6 col-md-4" style="background: #87E68F">Phone - 50% width; Desktop - 33% width</div>
+        </div>
+
+        <h3>Column Offsets</h3>
+        <div class="row">
+            <div class="col-md-4" style="background: lightblue">4-wide</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2" style="background: lightcoral">4-wide</div>
+        </div>
+
+        <h3>Nesting Rows</h3>
+        <div class="row">
+            <div class="col-md-9" style="background: lightseagreen; padding: 30px">
+                Hey, I went to the movies today.
+                <div class="row">
+                    <div class="col-md-6" style="background: lightblue">Child 1</div>
+                    <div class="col-md-6" style="background: lightsalmon">Child 2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

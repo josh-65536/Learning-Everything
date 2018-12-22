@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>10-SidebarMenu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style>
+    #sidebar-wrapper {
+        z-index: 1;
+        position: absolute;
+        width: 0;
+        height: 100%;
+        overflow-y: hidden;
+        background: #2C3E50;
+        border: 2px solid green;
+        opacity: 0.9;
+    }
+
+    #page-content-wrapper {
+        width: 100%;
+        position: absolute;
+        padding: 15px;
+        border: 5px solid blue;
+    }
+
+    #wrapper.menuDisplayed #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.menuDisplayed #page-content-wrapper {
+        padding-left: 250px;
+    }
+
+    .sidebar-nav {
+        padding: 0;
+        list-style: none;
+    }
+
+    .sidebar-nav li {
+        text-indent: 20px;
+        line-height: 40px;
+    }
+
+    .sidebar-nav li a {
+        display: block;
+        text-decoration: none;
+        color: #DDD;
+    }
+
+    .sidebar-nav li a:hover {
+        background: #16A085;
+    }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar (non-Bootstrap HTML/CSS) -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#" class="btn btn-success" id="menu-toggle">Toggle Menu</a>
+                        <h1>Sidebar layouts are cool.</h1>
+                        <p>I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie. I love apple pie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("menuDisplayed");
+        });
+    </script>
+</body>
+</html>
