@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<script>
+    function orc(color, age, stomach) {
+        this.color = color;
+        this.age = age;
+        this.stomach = stomach;
+        this.eat = function(food) {
+            if (food == "bacon") {
+                document.write("nom nom nom<br />");
+                stomach += 0.25;
+            }
+            else {
+                document.write("No!");
+            }
+        };
+    }
+
+    var johnSmith = new orc("green", 26, 0.5);
+    johnSmith.eat("bacon");
+    johnSmith.eat("beans");
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

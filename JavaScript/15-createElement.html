@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<script>
+    function doSomething() {
+        var text = document.createTextNode("Mauris vel sodales erat. Phasellus consectetur, orci et pulvinar egestas, nibh risus vulputate sapien, at aliquet mauris augue eu magna. Suspendisse facilisis consequat augue quis efficitur. Duis auctor gravida vehicula. Praesent at finibus nunc. In vel laoreet enim. Nullam posuere lacinia lorem. Curabitur porta fermentum congue. Etiam eget libero lacus. Aliquam molestie malesuada augue, vel cursus odio varius quis.");
+        var thirdParagraph = document.createElement("p");
+        thirdParagraph.appendChild(text);
+
+        document.getElementById("container").appendChild(thirdParagraph);
+    }
+</script>
+</head>
+
+<body>
+    <div id="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas, est id viverra molestie, velit sem lobortis tellus, at dapibus elit mauris ut neque. In sit amet venenatis nunc. In ultricies turpis massa, at lobortis nulla feugiat eget. Cras vestibulum massa in nisl consectetur faucibus. Quisque lobortis faucibus consectetur. Nunc id quam ac eros sodales auctor a sit amet mi. Nunc magna ligula, vestibulum vel convallis et, bibendum non est. Morbi mattis et neque tincidunt semper. Etiam rutrum lacinia nulla, nec dignissim sem posuere ut. Ut eu erat arcu. Vestibulum lacinia mi nec felis volutpat, eu pharetra sem pulvinar. Fusce et lacinia augue.</p>
+        <p>Curabitur ante erat, finibus nec dui et, elementum interdum nisi. Maecenas eget sapien nec metus elementum vehicula. Sed rutrum mi eget ipsum eleifend imperdiet. Donec ac pellentesque ipsum. Aliquam euismod lacinia dolor cursus faucibus. Curabitur gravida ac mi non suscipit. Donec venenatis elementum porttitor. Ut a sem magna. Nulla lacus leo, viverra a fringilla nec, tristique eget elit. Etiam mollis fringilla arcu, et imperdiet ipsum vulputate eu. Sed risus elit, bibendum euismod tincidunt eget, ultricies non lectus. Nulla interdum nisi non enim molestie ultrices. Mauris hendrerit, nisl vitae finibus lacinia, lacus mi dignissim dolor, at consectetur erat elit a elit. Proin ligula nisl, dignissim sit amet consequat eget, facilisis quis tortor. Cras molestie est ut ligula porta cursus. In non facilisis elit.</p>
+    </div>
+
+    <button onclick="doSomething()">Click Me!</button>
+</body>
+
+</html>

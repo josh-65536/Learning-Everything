@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<script>
+    function doSomething() {
+        var messages = document.getElementsByClassName("food");
+        for (var i = 0; i < messages.length; ++i) {
+            messages[i].style.fontSize = "24px";
+            messages[i].style.fontStyle = "italic";
+        }
+    }
+</script>
+</head>
+
+<body>
+    <div class="food">Apple</div>
+    <div class="food">Tuna</div>
+    <div class="food">Bacon</div>
+    <div class="food">Ham</div>
+    <div class="food">Natalie Portman</div>
+    <button onclick="doSomething()">Click Me!</button>
+</body>
+
+</html>

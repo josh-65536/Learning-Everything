@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<script>
+    var orc = {
+        color: 'green',
+        age: 26,
+        stomach: 0.5,
+        eat: function(food) {
+            if (food == 'bacon') {
+                document.write('nom nom nom.<br />');
+                this.stomach += 0.25;
+            }
+            else {
+                document.write('No!<br />');
+            }
+        },
+        appendix: true
+    };
+
+    document.write(orc.color + '<br />');
+    document.write(orc.stomach + '<br />');
+    orc.eat('bacon');
+    orc.eat('salad');
+    document.write(orc.stomach + '<br />');
+
+    orc.appendix = 'appendix';
+    document.write(orc.appendix + '<br />');
+
+    delete orc.appendix;
+    document.write(orc.appendix + '<br />');
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

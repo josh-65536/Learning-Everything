@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<script>
+    function myValidation() {
+        var inputs = [
+            document.getElementById("name"),
+            document.getElementById("address"),
+            document.getElementById("phoneNumber"),
+            document.getElementById("email")
+        ];
+
+        for (var i = 0; i < inputs.length; ++i) {
+            if (inputs[i].value == "") {
+                alert("Missing required fields.");
+                return false;
+            }
+        }
+
+        return true;
+    }
+</script>
+</head>
+
+<body>
+    <form id="myForm" action="01-intro.html" method="post" onSubmit="return myValidation();">
+        <div>
+            <label for="name">Name:</label>
+            <input type=text" id="name" name="" />
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="" />
+        </div>
+        <div>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="" />
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="" />
+        </div>
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</body>
+
+</html>
