@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<script>
+    class User {
+        constructor(name, email) {
+            this.name = name;
+            this.email = email;
+        }
+
+        printInfo() {
+            console.log(this);
+        }
+    }
+
+    window.onload = function() {
+        var johnSmith = new User('John Smith', 'johnsmith@example.com');
+        var jamesMadison = new User('James Madison', 'jamesmadison@example.com');
+
+        johnSmith.printInfo();
+        jamesMadison.printInfo();
+    }
+</script>
+</head>
+<body>
+</body>
+</html>
