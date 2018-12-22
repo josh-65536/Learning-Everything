@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<script>
+    window.onload = function() {
+        var items = new Set();
+
+        items
+            .add('frog legs')
+            .add('apple')
+            .add('$1,000,000 bill (real)');
+
+        items.delete('$1,000,000 bill (real)');
+
+        console.log(items);
+    }
+</script>
+</head>
+<body>
+</body>
+</html>

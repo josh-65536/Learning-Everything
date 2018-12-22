@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<script>
+    window.onload = function() {
+        var name = 'frog legs';
+        var price = 4.99;
+
+        var item = {
+            name,
+            price,
+            buy(quantity) {
+                console.log(`You bought ${quantity} ${this.name} for \$${this.price * quantity}.`);
+            }
+        };
+
+        item.buy(500);
+    }
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<script>
+    window.onload = function() {
+        function* myGenerator() {
+            yield 'apple';
+            yield 'pear';
+            yield 'banana';
+        }
+
+        var foo = myGenerator();
+        console.log(foo.next());
+        console.log(foo.next());
+        console.log(foo.next());
+
+        function* anotherGenerator() {
+            var a = yield;
+            var b = yield;
+            var c = yield;
+            yield a + b + c;
+        }
+
+        var bar = anotherGenerator();
+        console.log(bar.next());
+        console.log(bar.next(3));
+        console.log(bar.next(5));
+        console.log(bar.next(7));
+    }
+</script>
+</head>
+<body>
+</body>
+</html>

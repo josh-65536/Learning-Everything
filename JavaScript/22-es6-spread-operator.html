@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<script>
+    window.onload = function() {
+        var fruits = ['apple', 'banana', 'orange'];
+        var meats = ['tuna', 'bacon', 'ham'];
+        var food = [...fruits, ...meats];
+
+        console.log(food);
+
+        function printSum(a, b, c) {
+            console.log(a + b + c);
+        }
+
+        var numbers = [3, 5, 7];
+        printSum(...numbers);
+    }
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<script>
+    window.onload = function() {
+        var printMessage = (message) => console.log(message);
+        printMessage('Hello World!');
+
+        var item = {
+            name: 'frog legs',
+            price: 4.99,
+            // Instead of this...
+            /*
+            buy(quantity) {
+                var _this = this;
+                window.setInterval(function() {
+                    if (quantity > 0) {
+                        console.log(`You bought ${_this.name} for \$${_this.price}.`);
+                        quantity--;
+                    }
+                }, 1000);
+            }
+            */
+            // Use this:
+            buy(quantity) {
+                window.setInterval(() => {
+                    if (quantity > 0) {
+                        console.log(`You bought ${this.name} for \$${this.price}.`);
+                        quantity--;
+                    }
+                }, 1000);
+            }
+        };
+
+        item.buy(500);
+    }
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<script>
+    function withVar() {
+        var x = 10;
+
+        if (x > 5) {
+            var x = 5;
+        }
+
+        console.log(`x = ${x}`);
+    }
+
+    function withLet() {
+        let x = 10;
+
+        if (x > 5) {
+            let x = 5;
+        }
+
+        console.log(`x = ${x}`);
+    }
+
+    window.onload = function() {
+        console.log('With \'var\' keyword:');
+        withVar();
+
+        console.log('With \'let\' keyword:');
+        withLet();
+    }
+</script>
+</head>
+<body>
+</body>
+</html>
