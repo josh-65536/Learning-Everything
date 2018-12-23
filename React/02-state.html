@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+    <div id="app">
+    </div>
+
+    <script type="text/babel">
+        class App extends React.Component {
+            state = {
+                food: 'bacon',
+                meal: 'breakfast'
+            }
+
+            handleClick = (e) => {
+                this.setState({
+                    food: 'apple',
+                    meal: 'breakfast'
+                });
+            }
+
+            render() {
+                return (
+                    <div>
+                        <h2>Hello World!</h2>
+                        <p>{this.state.food}</p>
+                        <p>{this.state.meal}</p>
+                        <button onClick={this.handleClick}>Click Me!</button>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render(<App />, document.getElementById('app'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+    <div id="app">
+    </div>
+
+    <script type="text/babel">
+        class App extends React.Component {
+            state = {
+                username: 'johnsmith',
+                password: '1234567890'
+            }
+
+            onUsernameChange = (e) => {
+                this.setState({
+                    username: e.target.value,
+                    password: this.state.password
+                });
+            }
+
+            onFormSubmit = (e) => {
+                e.preventDefault();
+                console.log(`You submitted: ${this.state}`);
+            }
+
+            render() {
+                return (
+                    <div>
+                        <h2>User</h2>
+                        <div>
+                            <form onSubmit={this.onFormSubmit}>
+                                <p>Username: <input type="text" onChange={this.onUsernameChange} /></p>
+                                <p>Password: <input type="text" /></p>
+                                <button>Submit</button>
+                            </form>
+                        </div>
+                        <div>
+                            <p>Username is {this.state.username}</p>
+                        </div>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render(<App />, document.getElementById('app'));
+    </script>
+</body>
+</html>
