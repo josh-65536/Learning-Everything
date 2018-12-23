@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<script>
+    window.onload = function() {
+        let person = ['John', 'Smith', 'johnsmith@example.com', 'male', '25'];
+        let [, lastName, email, ...otherElements] = person;
+
+        console.log(lastName);
+        console.log(email);
+        console.log(otherElements);
+    }
+</script>
+</head>
+<body>
+</body>
+</html>

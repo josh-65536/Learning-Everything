@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<script>
+    let printItems = function(message, ...items) {
+        console.log(message);
+
+        for (let i in items) {
+            console.log(items[i]);
+        }
+    }
+
+    window.onload = function() {
+        printItems('====================', 'Red');
+        printItems('====================', 'Red', 'Green');
+        printItems('====================', 'Red', 'Green', 'Blue');
+    }
+</script>
+</head>
+<body>
+</body>
+</html>
